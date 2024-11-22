@@ -53,6 +53,13 @@
         "variant": "cpp",
         "bitset": "cpp",
         "chrono": "cpp",
-        "ranges": "cpp"
+        "ranges": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "unordered_set": "cpp",
+        "generator": "cpp",
+        "stacktrace": "cpp",
+        "regex": "cpp",
+        "valarray": "cpp"
     }
 }

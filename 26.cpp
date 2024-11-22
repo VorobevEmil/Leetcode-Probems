@@ -8,7 +8,7 @@ public:
     int removeDuplicates(vector<int> &nums)
     {
         int k = 0;
-        int currentNum = -1;
+        int currentNum = nums[0] - 1;
         for (size_t i = 0; i < nums.size(); i++)
         {
             if (nums[i] != currentNum)

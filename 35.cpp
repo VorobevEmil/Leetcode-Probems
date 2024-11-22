@@ -8,26 +8,23 @@ public:
     int searchInsert(vector<int> &nums, int target)
     {
         int low = 0;
-        int high = nums.size();
+        int high = nums.size() - 1;
         int mid;
 
-        while (true)
+        while (low <= high)
         {
-            mid = (low + high) / 2;
-            if (nums[mid] == mid)
-            {
-                return target;
-            }
-            else if (nums[mid] > target)
-            {
+            mid = low + (high - low) / 2;
+
+            if (nums[mid] == target)
+                return mid;
+
+            if (nums[mid] < target)
                 low = mid + 1;
-            }
+
             else
-            {
                 high = mid - 1;
-            }
         }
 
-        return -1;
+        return low;
     }
 };
